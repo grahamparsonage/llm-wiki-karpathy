@@ -45,13 +45,22 @@ Excludes (from that review's criteria):
 
 ---
 
-## Research gaps (2026 review)
+## Research gaps (2026 review + papers.bib corpus)
 
 - Few studies with agency as primary focus
 - Weak evaluation instruments; mostly exploratory observation
 - Transformative/critical agency mostly speculative—not longitudinal praxis
 - Cognitive/developmental accounts underrepresented vs sociocultural
 - Single-user tool focus; weak attention to relational/institutional context
+
+## Themes from `papers.bib` ingest (see [[ingest-batches-child-ai-topics]])
+
+- **Co-creation** vs instructional AI (e.g. [[choi-2026-tinker-tales]], [[druga-2025-scratch-copilot]])
+- **Recommender / platform** risks to agency ([[chowdhury-2023-goldilocks-child-centered-ai]])
+- **Participatory design** and values in ML ([[bai-2023-participatory-design-ai-children]], [[dwivedi-2023-values-ai-problem-formulation]])
+- **Parents & preschool** ([[sun-2024-parent-needs-preschoolers-storytelling]])
+- **Trust & anthropomorphism** ([[hoehl-2024-honest-machines-trust]], [[kim-2025-young-children-anthropomorphism-ai-chatbot]])
+- **Pending high-value:** [[papers-pending-download]] (Cai2025 six considerations, Wang2023 child-centred AI design)
 
 ---
 
@@ -60,4 +69,6 @@ Excludes (from that review's criteria):
 - [[agency]]
 - [[relational-agency-lens]]
 - [[agency-lit-review-hal]]
+- [[ingest-batches-child-ai-topics]]
+- [[papers-pending-download]]
 - [[children-digital-users]]

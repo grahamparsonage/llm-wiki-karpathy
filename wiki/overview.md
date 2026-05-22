@@ -3,7 +3,7 @@ title: Overview
 type: overview
 created: 2026-04-07
 updated: 2026-05-22
-sources: [Agency_lit_review-HAL.pdf, 3544548.3580651.pdf, 3628516.3655806.pdf, 1-s2.0-S2212868923000545-main.pdf]
+sources: [Agency_lit_review-HAL.pdf, 3544548.3580651.pdf, 3628516.3655806.pdf, 1-s2.0-S2212868923000545-main.pdf, papers.bib]
 tags: [overview, synthesis]
 ---
 
@@ -15,9 +15,9 @@ Synthesis of the wiki's domain: **children's agency** in human–computer intera
 
 ## Current State
 
-**Source count:** 4 (all files in `raw/`)
-**Wiki pages:** 18 entity pages + 5 core files (including [[bibliography]])
-**Last ingest:** 2026-05-22 — full `raw/` batch
+**Source count:** 28 ingested in wiki (24 from `papers.bib` + 4 agency corpus); 38 pending download
+**Wiki pages:** 40+ entity pages + core files
+**Last ingest:** 2026-05-22 — `papers.bib` batch (5×5 with topic reviews)
 **Last lint:** 2026-05-22 — English (GB) normalisation
 
 ---
@@ -58,6 +58,8 @@ Primary anchor source: [[agency-lit-review-hal]] (Voysey et al., 2026 preprint).
 - [[relational-agency-lens]] — multi-stakeholder framing
 - [[hci-agency-autonomy-four-aspects]] — general HCI analytic framework
 - [[agency-research-landscape]] — cross-source synthesis
+- [[ingest-batches-child-ai-topics]] — topic reviews per ingest batch
+- [[papers-pending-download]] — 38 papers still to download
 - [[english-gb]] — British English style rule for all wiki prose
 - [[bibliography]] — Harvard references and BibTeX for ingested papers
 
