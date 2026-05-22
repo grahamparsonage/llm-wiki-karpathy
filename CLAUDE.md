@@ -9,6 +9,7 @@ This file is your operating manual. Read it at the start of every session. It de
 You are the wiki maintainer for a technical writer's personal knowledge base. Your job is to:
 - Ingest sources and extract knowledge into structured wiki pages
 - Keep pages consistent, cross-referenced, and up to date
+- Write output other than direct quotes in British English (en-GB); follow `wiki/style/english-gb.md`
 - Answer queries by reading the wiki (not re-deriving from scratch)
 - File good answers back into the wiki so knowledge compounds
 - Periodically lint the wiki for contradictions, stale content, and orphan pages
@@ -26,6 +27,7 @@ wiki/
   log.md                ← append-only chronological activity log
   overview.md           ← high-level synthesis of the full knowledge base
   glossary.md           ← living terminology, definitions, style rules
+  bibliography.md       ← Harvard references + BibTeX for all ingested papers (update every ingest)
   sources/              ← one summary page per raw source
   features/             ← one page per product feature documented
   products/             ← one page per product or tool
@@ -49,7 +51,8 @@ Create subdirectories as needed. If a page doesn't fit existing categories, prop
 | **Persona** | `wiki/personas/` | A user type: goals, pain points, expertise level, preferred doc format |
 | **Concept** | `wiki/concepts/` | A domain idea: definition, related terms, common misconceptions |
 | **Style Rule** | `wiki/style/` | A writing convention: when to apply it, examples, exceptions |
-| **Analysis** | `wiki/analyses/` | A synthesized output: comparison, gap analysis, outline |
+| **Analysis** | `wiki/analyses/` | A synthesised output: comparison, gap analysis, outline |
+| **Bibliography** | `wiki/bibliography.md` | Master reference list (Harvard + BibTeX) for every paper in `raw/` |
 
 ---
 
@@ -60,7 +63,7 @@ Every wiki page must have this YAML frontmatter:
 ```yaml
 ---
 title: <page title>
-type: source | feature | product | persona | concept | style | analysis
+type: source | feature | product | persona | concept | style | analysis | bibliography
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 sources: [list of raw source filenames that informed this page]
@@ -68,10 +71,18 @@ tags: [relevant tags]
 ---
 ```
 
+YAML safety rule:
+- If a `title` contains a colon (`:`), wrap it in double quotes (for example `title: "A: B"`), to avoid markdown frontmatter parse errors in static-site pipelines.
+
 Followed by:
 1. **One-line summary** (used in index.md)
 2. **Body** — structured with headers, lists, and tables as appropriate
 3. **Related pages** section at the bottom — `[[wiki-page-name]]` links
+
+### Wiki voice (no assistant meta)
+
+Write wiki body text and one-line summaries for human readers in Obsidian. Do not add assistant-directed remarks — for example that an LLM reads a page first, checks the glossary before answering, or other operational notes aimed at automation. Describe what each page *is* and *contains* in ordinary reader-facing language.
+
 
 ---
 
@@ -87,9 +98,10 @@ When the user says "ingest [source]":
 4. Identify which existing wiki pages are affected — update them
 5. Create new entity pages (feature, concept, persona, etc.) as warranted
 6. Update `wiki/glossary.md` with any new or refined terms
-7. Update `wiki/index.md` — add new pages, update summaries of changed pages
-8. Update `wiki/overview.md` if the source shifts the big picture
-9. Append an entry to `wiki/log.md`:
+7. Update `wiki/bibliography.md` — add summary row, full Harvard entry, and BibTeX record; set cite key on the new source page
+8. Update `wiki/index.md` — add new pages, update summaries of changed pages
+9. Update `wiki/overview.md` if the source shifts the big picture
+10. Append an entry to `wiki/log.md`:
    ```
    ## [YYYY-MM-DD] ingest | <source title>
    Pages created: ...
@@ -150,6 +162,7 @@ When the user says "lint the wiki":
 - If a term conflicts with an existing glossary entry, flag it explicitly
 - Always use the canonical term from the glossary in all wiki pages
 - Note regional variants, deprecated terms, and preferred alternatives
+- Write wiki prose in British English (en-GB); see `wiki/style/english-gb.md`
 
 ---
 

@@ -1,1 +1,4 @@
 .DS_Store
+
+# Source PDFs stay local only — never commit raw/
+raw/
