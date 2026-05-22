@@ -3,7 +3,7 @@ title: Agency Research Landscape (Synthesis)
 type: analysis
 created: 2026-05-22
 updated: 2026-05-22
-sources: [Agency_lit_review-HAL.pdf, 3544548.3580651.pdf, 3628516.3655806.pdf, 1-s2.0-S2212868923000545-main.pdf]
+sources: [Agency_lit_review-HAL.pdf, 3544548.3580651.pdf, 3628516.3655806.pdf, 1-s2.0-S2212868923000545-main.pdf, papers.bib]
 tags: [agency, synthesis, hci, cci, child-ai-interaction]
 ---
 
@@ -21,6 +21,21 @@ Cross-source synthesis of how agency is theorised, studied, and supported across
 | [[agency-lit-review-hal]] | Child–AI in ACM HCI | 25 empirical papers |
 | [[ijcci-computational-empowerment-editorial]] | CE field framing | Special issue editorial |
 | [[iivari-idc24-transformative-agency]] | CE + PD theory | 2 Nordic case projects |
+| **`papers.bib` batch (24)** | Child–AI design, robots, parents, evaluation | See [[ingest-batches-child-ai-topics]]; 38 pending in [[papers-pending-download]] |
+
+---
+
+## Themes from `papers.bib` ingest (24 papers)
+
+Extends the agency corpus with empirical and design studies (not a second systematic review). Clustered by [[ingest-batches-child-ai-topics]]:
+
+| Theme | Representative sources | Agency link |
+|---|---|---|
+| PD & co-design | [[bai-2023-participatory-design-ai-children]], [[dwivedi-2023-values-ai-problem-formulation]], [[yang-2026-design-framework-children-agency]] | Children as agents in problem formulation and framework design |
+| Creative & coding agency | [[druga-2025-scratch-copilot]], [[choi-2026-tinker-tales]], [[lee-2022-interactive-children-story-rewriting]] | Reject/adapt AI; co-authorship vs tutoring |
+| Trust, bias, safety | [[chowdhury-2023-goldilocks-child-centered-ai]], [[hoehl-2024-honest-machines-trust]], [[kim-2025-young-children-anthropomorphism-ai-chatbot]], [[ragone-2024-designing-safe-engaging-ai-experiences]] | When AI undermines or over-attributes agency |
+| Relational & developmental | [[sun-2024-parent-needs-preschoolers-storytelling]], [[rudenko-2024-child-factor-child-robot-interaction]], [[lemaignan-2016-learning-by-teaching-robot-handwriting]] | Parents, age, and teaching roles as co-agents |
+| Evaluation & skills | [[xie-2024-evaluation-scheme-children-centered-language]], [[yatani-2024-ai-extraherics-higher-order-thinking]] | Metrics for child-centred language AI; HOT vs automation |
 
 ---
 
@@ -74,5 +89,7 @@ Relational lens (who chooses, when, where, with whom)
 - [[agency]]
 - [[overview]]
 - [[glossary]]
-- All four source pages in `wiki/sources/`
+- [[ingest-batches-child-ai-topics]]
+- [[child-ai-interaction]]
+- [[papers-pending-download]]
 - [[bibliography]]
