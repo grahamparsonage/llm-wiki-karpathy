@@ -18,7 +18,7 @@ Instead of re-searching raw documents on every question (like RAG), the LLM **re
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/balukosuri/llm-wiki-karpathy.git
+git clone https://github.com/grahamparsonage/llm-wiki-karpathy.git
 cd llm-wiki-karpathy
 ```
 
@@ -86,13 +86,13 @@ llm-wiki-karpathy/
 ├── llm-wiki.md        # Karpathy's original idea document
 ├── article.md         # Walkthrough article explaining this project
 │
-├── raw/               # Your source documents (AI reads, never writes)
-│   └── .gitkeep
+├── raw/               # Your source documents (local only — not in git; see .gitignore)
 │
 ├── wiki/              # AI-generated knowledge base (AI owns this layer)
 │   ├── index.md       # Master catalog — the AI reads this first on every query
 │   ├── overview.md    # Big-picture synthesis (evolves with each ingest)
 │   ├── glossary.md    # Terms, definitions, and style conventions
+│   ├── bibliography.md # Harvard references for ingested papers
 │   └── log.md         # Chronological record of all activity
 │
 └── .obsidian/         # Pre-configured Obsidian vault settings
